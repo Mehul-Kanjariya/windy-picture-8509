@@ -1,0 +1,499 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+#bg_gradient{
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(110deg,#ff385c,#f796b5);
+    border: 1px solid transparent;
+}
+#image1{
+    width: fit-content;
+    margin: 20px auto auto auto;
+}
+#offer{
+    width: 70%;
+    font:inherit;
+    font-family: futura-pt,FuturaStd,Helvetica,Arial,sans-serif;
+    font-size: 45px;
+    text-align: center;
+    font-weight: 1000;
+    line-height: 47px;
+    font-style: italic;
+    margin: 10px auto auto auto;
+}
+#offer+p{
+    font-family: futura-pt,FuturaStd,Helvetica,Arial,sans-serif;
+    font-weight: 750;
+    font-size: 23px;
+    width:fit-content;
+    margin: 10px auto auto auto;
+}
+#images{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 80%;
+    gap: 20px;
+    margin: 20px auto auto auto;
+}
+#images img{
+    width: 100%;
+    margin: 0;
+}
+#images>div{
+    background-color: white;
+}
+#images>div>div>div{
+    width: fit-content;
+    margin: 16px auto 17px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+#view_btn{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 70px;
+}
+#view_btn>div{
+    padding: 13px 50px;
+    width: fit-content;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background-color: white;
+    margin: auto;
+    transition:0.4s;
+}
+#view_btn>div:hover,.view_btn:hover{
+    background-color: black;
+    color: white;
+    cursor:pointer;
+}
+#view_btn+p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: fit-content;
+    margin: 15px auto 15px auto;
+    font-size: 12px;
+    text-align: center;
+}
+#image2{
+    margin-top: 50px;
+}
+#image2>div{
+    position: relative;
+    width: 100%;
+}
+#image2>div{
+    width: fit-content;
+    margin: auto;
+}
+#image2>div>div:nth-child(1)>img{
+    width: 100%;
+}
+.retro{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    width: 100%;
+}
+.retro>div:nth-child(1){
+    background-color: white;
+    font-family: sans-serif;
+    width: fit-content;
+    font-size: 70px;
+    font-weight: 700;
+    padding: 0 5px;
+    margin: 30% auto auto auto;
+}
+.retro>div:nth-child(2){
+    background-color: white;
+    font-family: sans-serif;
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 15px 20px;
+    margin: 3% auto auto auto;
+}
+#by_season{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 82.7%;
+    gap:20px;
+    margin: 30px auto auto auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#by_season h3{
+    letter-spacing: 1.5px;
+}
+#by_season img{
+    width: 100%;
+}
+#offer_upto{
+    background-color:#f799ba;
+    height: auto;
+    width: 100%;
+    border: 1px solid transparent;
+}
+#offer_upto>div{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin: 25px auto auto auto;
+}
+#offer_upto span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: 1000;
+    font-size: 180%;
+    line-height: 35px;
+}
+#offer_upto>p{
+    width: 50%;
+    text-align: center;
+    margin: 10px auto 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+#image3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    width: 69%;
+    margin: 45px auto auto auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+#image3 img{
+    width: 100%;
+}
+#image h2{
+    margin: 0;
+    padding: 0;
+}
+.view_btn{
+    text-align: center;
+    width: fit-content;
+    border: 2px solid black;
+    margin: auto;
+    transition: 0.4s;
+    padding: 20px 15px;
+    letter-spacing: 2px;
+}
+.view_btn>div{
+    font-weight: 700;
+}
+#image4{
+    width:100%;
+    height: auto;
+    margin: 50px auto auto auto;
+}
+#image4>div{
+    position: relative;
+    height: auto;
+}
+#image4 img{
+    width: 100%;
+    height: auto;
+}
+#image4 #gift{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: auto;
+}
+#gift>div{
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+#gift>div:nth-child(1){
+    margin: 2% auto auto auto;
+    font-size: 25px;
+    line-height: 33px;
+}
+#gift>div:nth-child(2){
+    margin: 2% auto auto auto;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 33px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    padding: 8px 20px;
+    transition: 0.4s;
+}
+#gift>div:nth-child(2):hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+#image5{
+    width:fit-content;
+    margin: 40px auto auto auto;
+}
+#image6>div{
+    position: relative;
+    height: 160px;
+    width:100%;
+}
+#image6{
+    margin: 25px auto auto auto;
+}
+#image6>div>div:nth-child(1){
+    height: 100%;
+    width:100%;
+}
+#image6>div>div:nth-child(1) img{
+    width: 100%;
+    height: 100%;
+}
+#premier{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    height: 100%;
+    width:100%;
+}
+#premier>div:nth-child(1){
+    width: fit-content;
+    margin: 1.5% auto auto auto;
+}
+#premier>div:nth-child(1)>img{
+    width: 100%;
+}
+#premier>div:nth-child(2){
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+    margin: 6px auto auto auto;
+}
+#premier>p{
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    width: 70%;
+    text-align: center;
+    margin: 15px auto auto auto;
+}
+#trend{
+    width: fit-content;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    letter-spacing: 1px;
+    margin:60px auto auto auto;
+}
+#brands{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin: auto;
+    width: 82.6%;
+}
+#brands img{
+    width: 100%;
+}
+#brands img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+@media only screen and (max-width: 730px) {
+    #images{
+        grid-template-columns: repeat(2, 1fr);
+    }  
+    #offer{
+        width: 90%;
+        font-size: 32px;
+    }  
+    #offer+p{
+        font-weight: 750;
+        font-size: 18px;
+    }
+    .retro>div:nth-child(1){
+        font-size: 30px;
+        font-weight: 900;
+        margin: 22% auto auto auto;
+    }
+    .retro>div:nth-child(2){
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        padding: 2% 2%;
+    }
+    #by_season{
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+    }
+    #by_season h3{
+        letter-spacing:0.9px;
+        font-size: 14px;
+        font-weight: 800;
+    }
+    #by_season p{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    #offer_upto>div{
+        width: 80%;
+        margin: 25px auto auto auto;
+    }
+    #offer_upto span{
+        letter-spacing: 0.5px;
+        font-size: 130%;
+        line-height: 25px;
+    }
+    #offer_upto>p{
+        width: 80%;
+    }
+    #image3{
+        grid-template-columns: repeat(1,1fr);
+        width:94%;
+        margin: 20px auto auto auto;
+    }
+    #image4{
+        height: 180px;
+        margin: 50px auto auto auto;
+    }
+    #image4>div,#image4>div>div:nth-child(1),#image4 img{
+        height: 100%;
+    }
+    #gift>div:nth-child(1){
+        margin: 4% auto auto auto;
+        font-size: 18px;
+        width: 50%;
+        line-height: 25px;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+    #gift>div:nth-child(2){
+        margin: 2% auto auto auto;
+        font-size: 14px;
+        padding: 7px 18px;
+    }
+    #image5{
+        margin: 40px auto auto auto;
+        width: 100%;
+    }
+    #image5>img{
+        width:100%;
+    }
+    #premier>div:nth-child(2){
+        font-size: 16px;
+        width: 85%;
+        font-weight: 700;
+        letter-spacing: 1px;   
+    }
+    #premier>div:nth-child(1){
+        width: fit-content;
+        margin: 6% auto auto auto;
+    }
+    #brands{
+        grid-template-columns: repeat(2,1fr);
+        width: 90%;
+    }
+}
+@media (min-width: 731px) and (max-width: 1150px) {
+    #images{
+        grid-template-columns: repeat(3, 1fr);
+    }  
+    #offer{
+        width: 85%;
+        font-size: 35px;
+    }  
+    #offer+p{
+        font-weight: 750;
+        font-size: 18px;
+    }
+    .retro>div:nth-child(1){
+        font-size: 45px;
+        font-weight: 900;
+        margin: 26% auto auto auto;
+    }
+    .retro>div:nth-child(2){
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        padding: 2% 2%;
+    }
+    #by_season{
+        grid-template-columns: repeat(4, 1fr);
+        width: 95%;
+        gap:15px
+    }
+    #by_season h3{
+        letter-spacing:0.9px;
+        font-size: 14px;
+        font-weight: 800;
+    }
+    #by_season p{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    #image3{
+        gap:30px;
+        width:94%;
+        margin: 23px auto auto auto;
+    }
+    #image4{
+        height: 180px;
+        margin: 50px auto auto auto;
+    }
+    #image4>div,#image4>div>div:nth-child(1),#image4 img{
+        height: 100%;
+    }
+    #gift>div:nth-child(1){
+        margin: 3% auto auto auto;
+        font-size: 18px;
+        width: 59%;
+        line-height: 25px;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+    #gift>div:nth-child(2){
+        margin: 3% auto auto auto;
+        font-size: 14px;
+        padding: 7px 18px;
+    }
+    #image5{
+        margin: 40px auto auto auto;
+        width: 100%;
+    }
+    #image5>img{
+        width:100%;
+    }
+    #premier>div:nth-child(1){
+        width: fit-content;
+        margin: 2.3% auto auto auto;
+    }
+    #premier>div:nth-child(2){
+        font-size: 20px;
+        width: 95%;
+        letter-spacing: 1px; 
+        margin: 8px auto auto auto;  
+    }
+    #premier>p{
+        margin: 20px auto auto auto;
+    }
+    #brands{
+        grid-template-columns: repeat(4,1fr);
+        width: 90%;
+    }
+    #brands>div:nth-child(5){
+        grid-column-start: 2 ;
+    }
+}

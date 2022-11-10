@@ -1,0 +1,71 @@
+
+         body {
+            background-color: #eee;
+        }
+        #box {
+            width: 45%;
+            height: auto;
+            border: 1px solid white;
+            margin: auto;
+            margin-top: 4%;
+            background-color: white;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+        }
+
+        #image>img {
+            margin-top: 5%;
+            margin-left: 45%;
+        }
+
+        #email,
+        #password,
+        #first_name,
+        #last_name,
+        #button>button {
+            width: 95%;
+            height: 45px;
+
+        }
+
+        #box2 {
+            margin: auto;
+            width: 50%;
+            margin-top: 10%;
+        }
+
+        #button {
+
+            margin-top: 20px;
+        }
+
+        #button>button {
+            color: white;
+            background-color: black;
+        }
+
+        #sign_inclick,#join_click {
+            color: grey;
+            cursor: pointer;
+            
+        }
+        h4{
+            color: grey;
+        }
+
+        #join {
+            display: flex;
+            border: 0px solid red;
+            justify-content: space-evenly;
+
+        }
+        #sign_inclick:hover{
+            color: black;
+          text-decoration: underline;
+          animation-direction: alternate-reverse;
+             
+        }
+        #join_click:hover{
+            color: black;
+          text-decoration: underline;
+        }
