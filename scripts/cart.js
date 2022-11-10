@@ -32,7 +32,7 @@ const appendgif=(data)=>{
         let img=document.createElement("img");
         img.src=el.product_main_image_url;
         let h3=document.createElement("p");
-        h3.innerText=el.title;
+        h3.innerText=el.product_title;
         div.append(img,h3);
         document.getElementById("container").append(div);
     })
