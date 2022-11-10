@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="join.css">
+<body>
+    <div id="image">
+        <img src="https://my.asos.com/Content/images/asos-logo-2022-93x28.png" alt="">
+    </div>
+    <div id="box">
+        <div id="join">
+            <h4 id="join_click">JOIN</h4>
+            <h4 id="sign_inclick">SIGN IN</h4>
+        </div>
+        <form>
+            <div id="box2">
+                <h4>EMAIL ADDRESS:</h4>
+                <input type="text" id="email">
+                <h4>FIRST NAME</h4>
+                <input type="text" id="first_name">
+                <h4>LAST NAME</h4>
+                <input type="text" id="last_name">
+                <h4>PASSWORD:</h4>
+                <input type="password" id="password">
+                <div id="button">
+                    <button>JOIN ASOS</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+<script>
+    let sign_inclick = document.getElementById("sign_inclick")
+    sign_inclick.onclick = () => {
+        window.location.href = "index.html"
+    }
+
+    let form = document.querySelector("form")
+    let LSdata = JSON.parse(localStorage.getItem("submit-item")) || []
+
+    form.addEventListener("submit", function (ele) {
+        ele.preventDefault()
+        let obj = {
+            email: form.email.value,
+            first_name: form.first_name.value,
+            last_name: form.last_name.value,
+            password: form.password.value
+
+        }
+        LSdata.push(obj)
+        localStorage.setItem("submit-item", JSON.stringify(LSdata))
+
+        let button = document.getElementById("button")
+        button.onclick = () => {
+            form.email.value = null
+            form.first_name.value = null
+            form.last_name.value = null
+            form.password.value = null
+            alert("SUCESSFULL")
+        }
+
+    })
+
+</script>
