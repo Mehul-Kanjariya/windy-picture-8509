@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="join.css">
+
 <body>
     <div id="image">
         <img src="https://my.asos.com/Content/images/asos-logo-2022-93x28.png" alt="">
@@ -43,29 +44,24 @@
     }
 
     let form = document.querySelector("form")
-    let LSdata = JSON.parse(localStorage.getItem("submit-item")) || []
-
     form.addEventListener("submit", function (ele) {
         ele.preventDefault()
-        let obj = {
-            email: form.email.value,
-            first_name: form.first_name.value,
-            last_name: form.last_name.value,
-            password: form.password.value
-
-        }
-        LSdata.push(obj)
-        localStorage.setItem("submit-item", JSON.stringify(LSdata))
+        var email = document.getElementById("email").value
+        var password = document.getElementById("password").value
+        localStorage.setItem("Useremail", email)
+        localStorage.setItem("Userpassword", password)
 
         let button = document.getElementById("button")
         button.onclick = () => {
-            form.email.value = null
-            form.first_name.value = null
-            form.last_name.value = null
-            form.password.value = null
-            alert("SUCESSFULL")
+            if (email.value == null) {
+                alert("fill email")
+            } else if (password.value == null) {
+                alert("fill password")
+            } else {
+                alert("sucess")
+            }
         }
-
     })
+
 
 </script>

@@ -43,40 +43,23 @@
     }
 
     let form = document.querySelector("form")
-    let LSdata = JSON.parse(localStorage.getItem("important_data")) || []
-    let LSdata1 = JSON.parse(localStorage.getItem("submit-item")) || []
-    let flag=false
-    if (LSdata[0].password == LSdata1[0].password) {
-       flag=true
-    } else if (LSdata[0].email == LSdata1[0].email) {
-       flag=true
-    } else {
-        flag
-    }
-
 
     form.addEventListener("submit", function (ele) {
         ele.preventDefault()
-        let obj = {
-            email: form.email.value,
-            password: form.password.value
-        }
-        LSdata.push(obj)
-        localStorage.setItem("important_data", JSON.stringify(LSdata))
+        var email = document.getElementById("email").value
+        var password = document.getElementById("password").value
 
-        let button = document.getElementById("button")
-        button.onclick = () => {
-            form.email.value = null
-            form.password.value = null
-            
-            if(flag){
-                alert("LOG IN SUCESS")
-            }else if(flag==false){
-                alert("LOG IN FAIL")
-            }else{
-                alert("EMPTY")
+        let getemail = localStorage.getItem("Useremail")
+        let getpassword = localStorage.getItem("Userpassword")
+
+        if (email == getemail) {
+            if (password == getpassword) {
+                alert("Login Successful")
+            } else {
+                alert("Wrong Password")
             }
-            // Link Homepage Here
+        } else {
+            alert("Invalid")
         }
     })
 </script>
