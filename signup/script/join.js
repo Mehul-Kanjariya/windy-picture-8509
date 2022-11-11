@@ -1,6 +1,6 @@
 let sign_inclick = document.getElementById("sign_inclick")
 sign_inclick.onclick = () => {
-    window.location.href = "index.html"
+    window.location.href = "signin.html"
 }
 
 let form = document.querySelector("form")

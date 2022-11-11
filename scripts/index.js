@@ -10,7 +10,7 @@ footer_div.innerHTML=footer();
 
 let user = document.getElementById('userid').addEventListener('click',myfunc);
 function myfunc(){
-	window.location.href='./signin.html'
+	window.location.href='./signup/signin.html'
 }
 
 let offer_clothes_data = [
