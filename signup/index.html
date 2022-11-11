@@ -8,7 +8,7 @@
     <title>Document</title>
 
 </head>
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="css/index.css">
 
 <body>
     <div id="image">
@@ -19,7 +19,7 @@
             <h4 id="join_click">JOIN</h4>
             <h4 id="sign_inclick">SIGN IN</h4>
         </div>
-        <form>
+        <form onsubmit="return validate()">
             <div id="box2">
                 <h4>EMAIL ADDRESS:</h4>
                 <input type="text" id="email">
@@ -36,47 +36,4 @@
 </body>
 
 </html>
-<script>
-    let join = document.getElementById("join_click")
-    join.onclick = () => {
-        window.location.href = "join.html"
-    }
-
-    let form = document.querySelector("form")
-    let LSdata = JSON.parse(localStorage.getItem("important_data")) || []
-    let LSdata1 = JSON.parse(localStorage.getItem("submit-item")) || []
-    let flag=false
-    if (LSdata[0].password == LSdata1[0].password) {
-       flag=true
-    } else if (LSdata[0].email == LSdata1[0].email) {
-       flag=true
-    } else {
-        flag
-    }
-
-
-    form.addEventListener("submit", function (ele) {
-        ele.preventDefault()
-        let obj = {
-            email: form.email.value,
-            password: form.password.value
-        }
-        LSdata.push(obj)
-        localStorage.setItem("important_data", JSON.stringify(LSdata))
-
-        let button = document.getElementById("button")
-        button.onclick = () => {
-            form.email.value = null
-            form.password.value = null
-            
-            if(flag){
-                alert("LOG IN SUCESS")
-            }else if(flag==false){
-                alert("LOG IN FAIL")
-            }else{
-                alert("EMPTY")
-            }
-            // Link Homepage Here
-        }
-    })
-</script>
+<script src="script/index.js"></script>
