@@ -48,9 +48,11 @@ body{
     padding-top: 60px;
 }
 #container>div{
-    border: 1px solid blue;
-    
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     text-align: center;
+}
+#container>div:hover{
+    background-color: #ececec;
 }
 #container>div>img{
     width: 50%;

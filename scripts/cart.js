@@ -39,7 +39,7 @@ const appenddata=(data)=>{
         let h3=document.createElement("h3");
         h3.innerText=el.product_title;
         let h2=document.createElement("h2");
-        h2.innerText=el.
+        h2.innerText=el.app_sale_price;
         div.append(img,h3);
         let p=document.createElement("p");
         p.innerText=el.original_price;
