@@ -77,12 +77,12 @@ body>div,body>div>div{
     cursor: pointer;
     color: blue;
 }
-@media only screen and (max-width: 830px){
+@media only screen and (max-width: 780px){
     #footer>div{
         display: none;
     }
 }
-@media (min-width: 831px) and (max-width: 1150px){
+@media (min-width: 781px) and (max-width: 1150px){
     #foot1>div:nth-child(4){
         display: none;
     }
