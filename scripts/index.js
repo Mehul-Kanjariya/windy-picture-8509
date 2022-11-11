@@ -1,20 +1,17 @@
-// let search = "panty";
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': '3bf207a79emsh121fd90e6a9fd50p1904d4jsn13e06ac9d846',
-// 		'X-RapidAPI-Host': 'asos2.p.rapidapi.com'
-// 	}
-// };
+import {navbar1} from '../components/navbar.js';
 
-// fetch(`https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=4209&limit=48&country=US&sort=freshness&q=${search}&currency=USD&sizeSchema=US&lang=en-US`, options)
-// 	.then(response => response.json())
-// 	.then(response => console.log(response))
-// 	.catch(err => console.error(err));
+let navbar_div = document.getElementById('navbar');
+navbar_div.innerHTML=navbar1();
 
-//     let a = "";
-//     let b = "";
-//     console.log(a==b);
+import {footer} from '../components/footer.js';
+
+let footer_div = document.getElementById('footer');
+footer_div.innerHTML=footer();
+
+let user = document.getElementById('userid').addEventListener('click',myfunc);
+function myfunc(){
+	window.location.href='./signin.html'
+}
 
 let offer_clothes_data = [
 	{
@@ -141,3 +138,20 @@ prev.addEventListener('click', () => {
 next.addEventListener('click', () => {
     slider.scrollLeft +=290
 })
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.display = "block";
+  } else {
+    document.getElementById("navbar").style.display = "none";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+let input = document.getElementById('nv2_inp').addEventListener('input',get_input);
+function get_input(){
+	let a = document.getElementById('nv2_inp').value;
+	console.log(a);
+}

@@ -1,6 +1,8 @@
 const navbar1=()=>{
 
-return ` <div id="nv1">  
+return ` 
+<div>
+<div id="nv1">  
 <button><img src="https://assets.asosservices.com/storesa/images/flags/in.png" alt=""></button>
 <button>Help & FAQs</button>
 <button>Market place</button>
@@ -11,16 +13,14 @@ return ` <div id="nv1">
 <div id="nv2_1">
     <img src="https://www.digitalspace.co.uk/wp-content/uploads/2022/01/logo-asos-neg.png"
         alt="">
-    <h3>Women</h3>
-    <h3>Men</h3>
+    <h3>WOMEN</h3>
+    <h3>MEN</h3>
 </div>
 <input type="text" id="nv2_inp" placeholder="  Search for brands and items">
 <div id="nv2_2">
-    <i class="fa-regular fa-user"></i>
+    <i class="fa-regular fa-user" id="userid"></i>
     <i class="fa-regular fa-heart"></i>
     <i class="fa-sharp fa-solid fa-bag-shopping"></i>
-
-
 </div>
 
 </div>
@@ -53,9 +53,7 @@ return ` <div id="nv1">
 
 </div>
 
-</div>`
-
-
-
+</div>
+</div>`;
 }
  export  { navbar1 }; 

@@ -2,11 +2,19 @@ body{
     padding: 0;
     margin: 0;
 }
+#navbar {
+    top:0;
+    position: fixed;
+    display: block;
+    transition: top 0.1s;
+    z-index: 100;
+} 
 #bg_gradient{
     height: auto;
     width: 100%;
     background-image: linear-gradient(110deg,#ff385c,#f796b5);
     border: 1px solid transparent;
+    margin-top: 200px;
 }
 #image1{
     width: fit-content;
@@ -318,7 +326,7 @@ body{
     box-sizing: border-box;
 } */
 #scroll{
-    background-color: #26e066; 
+    background-color: #9cf0e0; 
     height: auto;
     border: 1px solid transparent;
     width: 100%;
@@ -429,6 +437,9 @@ body{
     cursor: pointer;
     background-color: black;
     color: white;
+}
+#footer{
+    margin-top: 50px;
 }
 @media only screen and (max-width: 730px) {
     #images{

@@ -1,0 +1,92 @@
+body{
+    margin:0;
+    padding: 0;
+}
+*{
+    letter-spacing: 1px;
+}
+body>div,body>div>div{
+    width: 100%;
+}
+#foot1{
+    width: 70%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif ;
+    font-size: 13px;
+    color: #575454;
+}
+#foot3+div{
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-around;
+    padding-top: 20px;
+}
+#foot1>div{
+    width: 100%;
+}
+.head1{
+    font-size: 14px;
+    font-weight: bold;
+    width:fit-content ;
+    margin-left: 40px;
+}
+#foot2{
+    width: 83%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #666666;
+    font-family: sans-serif ;
+}
+
+#hea1{  
+    display: flex;
+    column-gap: 10px;
+    justify-content:center;
+    align-items: center;
+    margin-left: 40px;
+    font-size: 14px;
+    width: fit-content;
+}
+#hea1:hover{
+    cursor: pointer;
+    color: blue;
+}
+#hea1 img:hover{
+    border: 1px solid blue;
+    border-radius: 50%;
+}
+#foot3{
+    width: 45%;
+    height: 40px;
+    align-items: center;
+    font-size: 27px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+#foot1>div ul:hover{
+    cursor: pointer;
+    color:blue
+}
+#foot2 p:hover{
+    cursor: pointer;
+    color: blue;
+}
+@media only screen and (max-width: 830px){
+    #footer>div{
+        display: none;
+    }
+}
+@media (min-width: 831px) and (max-width: 1150px){
+    #foot1>div:nth-child(4){
+        display: none;
+    }
+    #foot3{
+        width:60%
+    }
+}

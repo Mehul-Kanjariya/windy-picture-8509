@@ -1,7 +1,8 @@
 const footer=()=>{
 
     return`
-    <div id="foot3">
+    <div>
+        <div id="foot3">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-square-snapchat"></i>
@@ -16,7 +17,7 @@ const footer=()=>{
         <div style="background-color: #eeeeee;">
             <div id="foot1">
                 <div>
-                    <ul class="head1">HELP & INFORMATION</ul>
+                    <p class="head1">HELP & INFORMATION</p>
                     <ul>Help</ul>
                     <ul>Track order</ul>
                     <ul>Delivery & returns</ul>
@@ -24,7 +25,7 @@ const footer=()=>{
                 </div>
 
                 <div>
-                    <ul class="head1">ABOUT ASOS</ul>
+                    <p class="head1">ABOUT ASOS</p>
                     <ul>About us</ul>
                     <ul>Carrers at ASOS</ul>
                     <ul>Corporate responsibility</ul>
@@ -32,16 +33,15 @@ const footer=()=>{
                 </div>
 
                 <div>
-                    <ul class="head1">MORE FROM ASOS</ul>
+                    <p class="head1">MORE FROM ASOS</p>
                     <ul>Mobile and ASOS apps</ul>
                     <ul>ASOS Marketplace</ul>
                     <ul>Gift vouchers</ul>
                     <ul>Black Friday</ul>
                     <ul>ASOS x Thrift+</ul>
                 </div>
-
                 <div>
-                    <ul class="head1"> SHOPPING FROM :</ul>
+                    <p class="head1"> SHOPPING FROM :</p>
                     <div id="hea1">
                         <p>You're in </p>
                         <img style=" height: 20px;" src="https://assets.asosservices.com/storesa/images/flags/in.png"
@@ -67,8 +67,7 @@ const footer=()=>{
 
         </div>
     </div>
-    
-    
+    </div> 
     `
 
 }
