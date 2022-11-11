@@ -124,3 +124,20 @@ let show_trend = (data) => {
 	})
 }
 show_trend(trending_brand);
+
+const prev = document.querySelector('.prev')
+const next = document.querySelector('.next')
+const slider = document.querySelector('.slider')
+const image = document.querySelectorAll('.items>img')
+
+for (let i=0; i<image.length; i++) {
+    image[i].style.height="270px";
+}
+
+prev.addEventListener('click', () => {
+    slider.scrollLeft -=290
+})
+
+next.addEventListener('click', () => {
+    slider.scrollLeft +=290
+})
