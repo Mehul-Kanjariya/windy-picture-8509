@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/checkout.css">
+</head>
+<body>
+    
+    <div id="head">
+        <div><img src="data:image/png;base64,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"></div>
+        <div><h1>CHECKOUT</h1></div>
+        <div><img src="https://seal.digicert.com/seals/cascade/?tag=dQkJvi0b&referer=secure.asos.com&format=png&lang=en&an=min"></div>
+    </div>
+          <div id="container">
+         <div id="left">
+        <div id="div1">
+            <h1>DELIVERY COUNTRY :</h1>
+            <div id="country">
+                <div id="country_name"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9T_1HxycWEhMBEBJbVqYX292b75jGs1UR-w&usqp=CAU">
+                    <div><h2>India</h2></div></div>
+                
+                <div><button>CHANCE</button></div>
+            </div>
+
+        </div>
+        <div id="div2">
+            <h1>PROMO/STUDENT CODE/VOUCHER :</h1>
+            <input type="text" id="promo" placeholder="Promo">
+            
+        </div>
+        <div id="div3">
+            <h1>EMAIL ADDRESS :</h1>
+            <input type="email" id="promo" placeholder="Email">
+        </div>
+        <div id="div4">
+            <h1> DELIVERY ADDRESS :</h1>
+            <input type="text" id="promo" placeholder="ADDRESS">
+        </div>
+        <div id="div5">
+            <h1>DELIVERY OPTIONS :</h1>
+            <select id="select">
+                <option ><h3>Standerd Delivery($7.00)</h3></option>
+                <option >Express Delivery($22.50) </option></select>
+        </div>
+        <div id="div6">
+            <h1>PAYMENT TYPE</h1>
+           <button id="button">ADD CREDIT /DEBIT CARD</button>
+           <h3 id="or">OR</h3>
+           <button id="button">PAYPAL</button>
+           <p>WE ACCEPT</p><img src="https://assets.asosservices.com/asos-finance/images/marketing/single.png">
+        </div>
+
+        <div id="paymentdiv">
+            <div id="payment"><h1>PAYMENT TYPE/CARD</h1>
+                <button>cancel</button></div>
+            <div>
+                <label ><h3 id="card_number">CARD NUMBER</h3></label>
+                <input type="number" id="card_number">
+            </div>
+            <div>
+                <label ><h3 id="card_date">EXPIRY   DATE</h3></label>
+                <input type="date" id="card_date">
+            </div>
+            <div>
+                <label ><h3 id="card_name">NAME ON CARD</h3></label>
+                <input type="text" id="card_name">
+            </div>
+            <div>
+                <label ><h3 id="card_cvv">CVV</h3>  </label>
+                <input type="number" id="card_cvv">
+            </div>
+            
+        </div>
+    </div>
+    <div id="right">
+        <div id="delivery"><h2>1</h2><h1>ITEM</h1></div>
+        
+        <div id="bag_item">
+            <div>
+                <img src="https://images.asos-media.com/products/asos-design-super-oversized-hoodie-in-back-with-photographic-print/203753065-1-black">
+            </div>
+                <div>
+                <div id="cut"><h3>$36.00</h3> 
+                </div>
+                <p>ASOS DESIGN super oversized hoodie in back with photographic print</p>
+                <div id="order"><p>Tommy black</p>
+                    <select id="">
+                        <option >XL</option>
+                        <option >XXL </option>
+                        <option >M </option>
+                        <option >L </option>
+                   </select>
+                   <select >
+                    <option >Qnt 1</option>
+               </select>
+              
+            <div>
+              
+                <div id="subtotal"><h3>Sub-total</h3> <p>$43</p></div>
+                    <div id="delivery"><h3>Delivery</h3> <p>$7</p></div>
+                    <div id="delivery"><h3>TOTAL</h3> <p>$50</p></div>
+            </div>
+            
+            </div>
+          
+        
+        
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

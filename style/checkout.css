@@ -1,0 +1,160 @@
+body{
+    background-color: rgb(238,238,238);
+}
+#head{
+    border:1px solid red
+   ; width: 95%;
+   display: flex;
+   justify-content: space-between;
+   ;margin: auto;
+   background-color: white;
+   margin-bottom: 20px;
+}
+#container{
+    border:1px solid rgb(40, 17, 17)
+   ; width: 95%;
+   display: flex;
+   ;margin: auto;
+   margin: auto;
+}
+#left{
+    width: 55%;
+}
+
+#right{
+    width: 40%;
+    margin: auto;
+}
+#country{
+    display: flex;
+    justify-content: space-between;
+}
+
+#country img{
+    width: 80px;
+}
+#country button{
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+#country_name{
+    display: flex;
+    justify-content: space-between;
+}
+#div1{
+    margin-top: 20px;
+    background-color: white;
+}
+#div2{
+    margin-top: 20px;
+    background-color: white;
+
+}
+
+   #div3{
+    margin-top: 20px;
+    background-color: white;}
+
+    #div4{
+        margin-top: 20px;
+        background-color: white;}
+
+        #div5{
+            margin-top: 20px;
+            background-color: white;
+            margin-bottom: 40px;}
+
+         #div6{
+         margin-top: 60px;
+         background-color: white;}
+    
+
+#promo{
+
+    width: 450px;
+    height: 40px;
+}
+
+#select{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+font-size: large;}
+
+#cut{display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content:space-between;
+ width: 90%;}
+
+ #bag_item{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    background-color: white;
+}
+
+#bag_item img{
+    width: 150px;
+}
+
+#subtotal{display: flex;
+    justify-content:space-between;
+    margin: auto;
+width: 90%;}
+
+    #delivery{display: flex;
+        justify-content:space-between;
+        margin: auto;
+        width: 90%;}
+
+        #payment {display: flex;
+            justify-content:space-between;
+            margin: auto;
+            width: 90%;}
+
+            #payment button{
+            margin-top: 20px;
+                width: 150px;
+            height: 50px;}
+            #card_number{
+             width: 350px;
+             height: 50px;
+             margin-left: 20px;
+            }
+            button{
+                margin-top: 20px;
+                    width: 250px;
+                height: 50px;
+            margin-left: 25px;}
+
+                #card_number{
+                 width: 350px;
+                 height: 50px;
+                 margin-left: 20px;
+                }
+                #or{
+                    margin-left: 120px;
+                }
+
+            #card_date{
+                width: 350px;
+                height: 50px;
+                margin-top: 20px;
+                margin-left: 5px;
+                margin-left: 20px;
+               }
+               #card_name{
+                width: 350px;
+                height: 50px;
+                margin-top: 20px;
+                margin-left: 20px;
+               }
+               #card_cvv{
+                width: 350px;
+                height: 50px;
+                margin-top: 20px;
+                margin-left: 20px;
+               }
