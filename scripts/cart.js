@@ -41,6 +41,14 @@ const appenddata=(data)=>{
         let h2=document.createElement("h2");
         h2.innerText=el.
         div.append(img,h3);
+        let p=document.createElement("p");
+        p.innerText=el.original_price;
+        div.append(img,h3,p);
         document.getElementById("container").append(div);
     })
+}
+function details(el){
+    let data=el;
+    localStorage.setItem("details",JSON.stringify(data));
+    window.location.href="details.html"
 }
