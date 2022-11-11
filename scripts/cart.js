@@ -33,7 +33,14 @@ const appendgif=(data)=>{
         img.src=el.product_main_image_url;
         let h3=document.createElement("p");
         h3.innerText=el.product_title;
-        div.append(img,h3);
+        let p=document.createElement("p");
+        p.innerText=el.original_price;
+        div.append(img,h3,p);
         document.getElementById("container").append(div);
     })
+}
+function details(el){
+    let data=el;
+    localStorage.setItem("details",JSON.stringify(data));
+    window.location.href="details.html"
 }
