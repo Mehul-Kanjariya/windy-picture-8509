@@ -15,25 +15,17 @@ const options = {
 
 const data=async()=>{
     try{
-        let search = document.getElementById('nv2_inp').value;
-        console.log(search);    
-        const options = {
-            method: 'GET',
-            headers: {
-                'X-RapidAPI-Key': '3bf207a79emsh121fd90e6a9fd50p1904d4jsn13e06ac9d846',
-                'X-RapidAPI-Host': 'asos2.p.rapidapi.com'
-            }
-        };
-        fetch(`https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=4209&limit=48&country=US&sort=freshness&q=${search}&currency=USD&sizeSchema=US&lang=en-US`, options)
-            .then(response => response.json())
-            .then(response => console.log(response))
-            .catch(err => console.error(err));
+       let responce=await fetch('https://amazon24.p.rapidapi.com/api/product?&keyword=ledies pant&country=US&page=1', options)
+       let data=await responce.json()
+       let actualdata=data.docs
+       console.log(actualdata);
+       appenddata(actualdata)
     }
     catch(error){
         console.log(error);
     }
 }
-document.getElementById('nv2_inp').addEventListener('input',data);
+data()
 
 const appenddata=(data)=>{
     document.getElementById("container").innerHTML=null
@@ -46,8 +38,8 @@ const appenddata=(data)=>{
         img.src=el.product_main_image_url;
         let h3=document.createElement("h3");
         h3.innerText=el.product_title;
-        // let h2=document.createElement("h2");
-        // h2.innerText=el.app_sale_price;
+        let h2=document.createElement("h2");
+        h2.innerText=el.app_sale_price;
         div.append(img,h3);
         let p=document.createElement("p");
         p.innerText=el.original_price;

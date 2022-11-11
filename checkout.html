@@ -16,67 +16,85 @@
     </div>
           <div id="container">
          <div id="left">
-        <div id="div1">
-            <h1>DELIVERY COUNTRY :</h1>
-            <div id="country">
-                <div id="country_name"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9T_1HxycWEhMBEBJbVqYX292b75jGs1UR-w&usqp=CAU">
-                    <div><h2>India</h2></div></div>
-                
-                <div><button>CHANCE</button></div>
+            <div id="paymentdiv">
+                <form id="form"><div id="payment"><h1>PAYMENT TYPE/CARD</h1>
+                    <button>cancel</button></div>
+                <div>
+                    <label ><h3 id="card_number">CARD NUMBER</h3></label>
+                    <input type="number" id="card_number">
+                </div>
+                <div>
+                    <label ><h3 id="card_date">EXPIRY   DATE</h3></label>
+                    <input type="number" id="card_date" placeholder="MM">/
+                    <input type="number" id="card_date" placeholder="YYYY">
+                </div>
+                <div>
+                    <label ><h3 id="card_name">NAME ON CARD</h3></label>
+                    <input type="text" id="card_name">
+                </div>
+                <div>
+                    <label ><h3 id="card_cvv">CVV</h3>  </label>
+                    <input type="number" id="card_cvv">
+                </div>
+    
+                <div>
+                      
+                    <input type="submit" id="submit">
+                </div>
+                </form>
+                  
+                 
             </div>
+            <div id="otpdiv">
+                <label ><h3 id="card_cvv">OTP  - VERIFICATION</h3>  </label>
+                <p>Please Insert OTP to Approve Transaction</p>
+                <input type="number" id="otp">
+                <button id="otpbtn">Place Order</button>
+              </div>
+            <div id="divs">
+                <div id="div1">
+                    <h1>DELIVERY COUNTRY :</h1>
+                    <div id="country">
+                        <div id="country_name"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9T_1HxycWEhMBEBJbVqYX292b75jGs1UR-w&usqp=CAU">
+                            <div><h2>India</h2></div></div>
+                        
+                        <div><button>CHANCE</button></div>
+                    </div>
+        
+                 </div>
+                 <div id="div2">
+                    <h1>PROMO/STUDENT CODE/VOUCHER :</h1>
+                    <input type="text" id="promo" placeholder="Promo">
+                    
+                 </div>
+                 <div id="div3">
+                    <h1>EMAIL ADDRESS :</h1>
+                    <input type="email" id="promo" placeholder="Email">
+                 </div>
+                 <div id="div4">
+                    <h1> DELIVERY ADDRESS :</h1>
+                    <input type="text" id="promo" placeholder="ADDRESS">
+                 </div>
+                 <div id="div5">
+                    <h1>DELIVERY OPTIONS :</h1>
+                    <select id="select">
+                        <option ><h3>Standerd Delivery($7.00)</h3></option>
+                        <option >Express Delivery($22.50) </option></select>
+                 </div>
+                 <div id="div6">
+                    <h1>PAYMENT TYPE</h1>
+                   <button id="button">ADD CREDIT /DEBIT CARD</button>
+                   <h3 id="or">OR</h3>
+                   <button id="button">PAYPAL</button>
+                   <p>WE ACCEPT</p><img src="https://assets.asosservices.com/asos-finance/images/marketing/single.png">
+                </div>
+            </div>
+         
 
-        </div>
-        <div id="div2">
-            <h1>PROMO/STUDENT CODE/VOUCHER :</h1>
-            <input type="text" id="promo" placeholder="Promo">
-            
-        </div>
-        <div id="div3">
-            <h1>EMAIL ADDRESS :</h1>
-            <input type="email" id="promo" placeholder="Email">
-        </div>
-        <div id="div4">
-            <h1> DELIVERY ADDRESS :</h1>
-            <input type="text" id="promo" placeholder="ADDRESS">
-        </div>
-        <div id="div5">
-            <h1>DELIVERY OPTIONS :</h1>
-            <select id="select">
-                <option ><h3>Standerd Delivery($7.00)</h3></option>
-                <option >Express Delivery($22.50) </option></select>
-        </div>
-        <div id="div6">
-            <h1>PAYMENT TYPE</h1>
-           <button id="button">ADD CREDIT /DEBIT CARD</button>
-           <h3 id="or">OR</h3>
-           <button id="button">PAYPAL</button>
-           <p>WE ACCEPT</p><img src="https://assets.asosservices.com/asos-finance/images/marketing/single.png">
-        </div>
-
-        <div id="paymentdiv">
-            <div id="payment"><h1>PAYMENT TYPE/CARD</h1>
-                <button>cancel</button></div>
-            <div>
-                <label ><h3 id="card_number">CARD NUMBER</h3></label>
-                <input type="number" id="card_number">
-            </div>
-            <div>
-                <label ><h3 id="card_date">EXPIRY   DATE</h3></label>
-                <input type="date" id="card_date">
-            </div>
-            <div>
-                <label ><h3 id="card_name">NAME ON CARD</h3></label>
-                <input type="text" id="card_name">
-            </div>
-            <div>
-                <label ><h3 id="card_cvv">CVV</h3>  </label>
-                <input type="number" id="card_cvv">
-            </div>
-            
-        </div>
+      
     </div>
     <div id="right">
-        <div id="delivery"><h2>1</h2><h1>ITEM</h1></div>
+        <div id="delivery1"><h1> <span>1</span>- ITEM</h1></div>
         
         <div id="bag_item">
             <div>
@@ -114,3 +132,4 @@
 
 </body>
 </html>
+<script src="./scripts/checkout.js"></script>

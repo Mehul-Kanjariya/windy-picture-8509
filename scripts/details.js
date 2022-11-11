@@ -1,22 +1,28 @@
+import {navbar1} from "../components/navbar.js";
+import {footer} from "../components/footer.js";
+
+document.getElementById("navbar").innerHTML=navbar1();
+document.getElementById("footer").innerHTML=footer();
+
 let data=JSON.parse(localStorage.getItem("details"))||[];
 const append=()=>{
-    image=document.getElementById("image_div");
-    img=document.createElement("img");
+    let image=document.getElementById("image_div");
+    let img=document.createElement("img");
     img.src=data.product_main_image_url;
     image.append(img);
-    details=document.getElementById("details_div");
-    title=document.createElement("p");
+    let details=document.getElementById("details_div");
+    let title=document.createElement("p");
     title.innerText=data.product_title;
-    oprice=document.createElement("h1");
+    let oprice=document.createElement("h1");
     oprice.innerText="$"+data.app_sale_price;
-    price=document.createElement("h2");
+    let price=document.createElement("h2");
     price.innerText= data.original_price;
-    btn=document.createElement("button");
+    let btn=document.createElement("button");
     btn.innerText="ADD T0 BAG";
     btn.addEventListener("click",function(){
         Bag()
     })
-    delivery=document.createElement("p");
+    let delivery=document.createElement("p");
     delivery.innerText="Free Delivery";
     details.append(title,oprice,price,btn,delivery)
     document.getElementById("container").append(image,details);
