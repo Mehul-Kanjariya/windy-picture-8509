@@ -1,3 +1,8 @@
+import {navbar1} from "../components/navbar.js";
+import {footer} from "../components/footer.js";
+
+document.getElementById("navbar").innerHTML=navbar1();
+document.getElementById("footer").innerHTML=footer();
 const options = {
 	method: 'GET',
 	headers: {
@@ -14,7 +19,7 @@ const data=async()=>{
        let data=await responce.json()
        let actualdata=data.docs
        console.log(actualdata);
-       appendgif(actualdata)
+       appenddata(actualdata)
     }
     catch(error){
         console.log(error);
@@ -22,7 +27,7 @@ const data=async()=>{
 }
 data()
 
-const appendgif=(data)=>{
+const appenddata=(data)=>{
     document.getElementById("container").innerHTML=null
     data.forEach((el)=>{
         let div=document.createElement("div");
@@ -31,8 +36,10 @@ const appendgif=(data)=>{
         })
         let img=document.createElement("img");
         img.src=el.product_main_image_url;
-        let h3=document.createElement("p");
+        let h3=document.createElement("h3");
         h3.innerText=el.product_title;
+        let h2=document.createElement("h2");
+        h2.innerText=el.
         div.append(img,h3);
         document.getElementById("container").append(div);
     })
