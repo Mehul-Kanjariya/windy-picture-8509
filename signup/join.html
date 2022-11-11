@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<link rel="stylesheet" href="join.css">
+<link rel="stylesheet" href="css/join.css">
 
 <body>
     <div id="image">
@@ -18,16 +18,18 @@
             <h4 id="join_click">JOIN</h4>
             <h4 id="sign_inclick">SIGN IN</h4>
         </div>
-        <form>
+        <form class="login_form" onsubmit="return validate()">
             <div id="box2">
                 <h4>EMAIL ADDRESS:</h4>
                 <input type="text" id="email">
+                <div id="email_error">Please fill up your email</div>
                 <h4>FIRST NAME</h4>
                 <input type="text" id="first_name">
                 <h4>LAST NAME</h4>
                 <input type="text" id="last_name">
                 <h4>PASSWORD:</h4>
                 <input type="password" id="password">
+                <div id="password_error">Please fill up your password</div>
                 <div id="button">
                     <button>JOIN ASOS</button>
                 </div>
@@ -37,31 +39,4 @@
 </body>
 
 </html>
-<script>
-    let sign_inclick = document.getElementById("sign_inclick")
-    sign_inclick.onclick = () => {
-        window.location.href = "index.html"
-    }
-
-    let form = document.querySelector("form")
-    form.addEventListener("submit", function (ele) {
-        ele.preventDefault()
-        var email = document.getElementById("email").value
-        var password = document.getElementById("password").value
-        localStorage.setItem("Useremail", email)
-        localStorage.setItem("Userpassword", password)
-
-        let button = document.getElementById("button")
-        button.onclick = () => {
-            if (email.value == null) {
-                alert("fill email")
-            } else if (password.value == null) {
-                alert("fill password")
-            } else {
-                alert("sucess")
-            }
-        }
-    })
-
-
-</script>
+<script src="script/join.js"></script>
