@@ -1,3 +1,7 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
 #intro{
     width: 80%;
     margin: auto;
@@ -40,14 +44,167 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 30px;
+    gap: 20px;
     padding-top: 60px;
 }
 #container>div{
     border: 1px solid blue;
+    
+    text-align: center;
+}
+#container>div>img{
+    width: 50%;
     height: 300px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+/* navbar */
+#nv1 {
+    height: 25px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
+#nv1>button>img {
+    width: 24%;
+}
+
+#nv2 {
+    background-color: #2d2d2d;
+    height: 60px;
+    display: flex;
+    column-gap: 40px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#nv2_1 {
+
+    display: flex;
+    column-gap: 30px;
+    color: white;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+
+#nv2_inp {
+    width: 50%;
+    height: 35px;
+    border-radius: 30px;
+    font-size: 17px;
+    border: 0px;
+
+}
+
+#nv2_1>img {
+    width: 40%;
+    height: 35px;
+
+}
+
+#nv2_2 {
+    color: white;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    font-size: 20px;
+
+}
+
+#nv3 {
+    background-color: #525050;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    color: white;
+    font-size: 13px;
+    font-family: sans-serif
+}
+
+#nv3>div {
+    width: 78%;
+    margin: auto;
+    display: flex;
+    column-gap: 15px;
+}
+
+#nv4 {
+    background-color: #ff385c;
+    height: 55px;
+}
+
+#nv4>div {
+    width: 78%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 15px;
+    font-weight: bold;
+    font-family: sans-serif
+}
+
+#nv4>div button {
+    width: 70px;
+    height: 30px;
+    background-color: #ff385c;
+    border: 2px solid black;
+    font-weight: bold;
+
+}
+
+/* footer */
+
+#foot1{
+    
+    width: 70%;
+    margin-left: 100px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif ;
+    font-size: 13px;
+    color: #666666;
+}
+.head1{
+    font-size: 16px;
+    font-weight: bold;
+}
+#foot2{
+    width: 83%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #666666;
+    font-family: sans-serif ;
+}
+
+#hea1{
+    
+    display: flex;
+    column-gap: 10px;
+    justify-content:center;
+    align-items: center;
+    margin-left: 40px;
+    
+}
+#foot3{
+    width: 45%;
+    height: 40px;
+    align-items: center;
+    font-size: 27px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
 /* medium size */
 @media all and (min-width:400px)and (max-width:800px){
     #sort{
