@@ -5,10 +5,15 @@
     gap: 30px;
 }
 #image_div{
-    width: 100%;
+    width: 70%;
+    height: 400px;
 }
 #image_div>img{
-    width: 100%;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
 }
 #details_div{
     margin-top: 80px;
@@ -19,6 +24,9 @@
 }
 #details_div>p:nth-child(4){         
     color: rgb(83, 83, 83);
+}
+#details_div>h2{
+    text-decoration: line-through;
 }
 #details_div>button{
     background-color: #018849;
@@ -40,6 +48,10 @@
 #details_div{
     margin-top: 40px;
 }
+#image_div{
+    width: 80%;
+    height: 380px;
+}
 }
 /* small size */
 @media all and (min-width:300px)and (max-width:400px){
@@ -50,5 +62,9 @@
     #details_div{
         margin-top: 0px;
         width: 100%;
+    }
+    #image_div{
+        width: 95%;
+        height: 350px;
     }
 }
