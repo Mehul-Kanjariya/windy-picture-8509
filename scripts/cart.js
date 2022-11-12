@@ -55,10 +55,43 @@ function details(el){
     window.location.href="details.html"
 }
 
-// debounce
+// fetch
+const getepost=async()=>{
+    let res=await fetch (`http://localhost:3000/posts   `,{
+        method:`GET`,
+        headers:{
+            'Content-Type' : 'application/json'
+        }
+    })
+    let data=await res.json();
+    console.log(data)
+}
+getepost()
 
+// append
+const append = (data) => {
+   
+    document.getElementById("container").innerHTML = null;
+    data.map((el) => {
+       
+        let div = document.createElement("div");
+        let img = document.createElement("img");
+        img.src = el.image;
+        let p = document.createElement("p");
+        p.innerText = el.name;
+        let h3=document.createElement("h3");
+        h3.innerText=el.price;
+        div.append(img,p,h3)
+        document.getElementById("container").append(div);
+    })
+}
+
+let getdata = () => {
+    fetch('http://localhost:3000/posts?q=shirt').then((res) => res.json()).then((res) => append(res)).catch((er) => console.log(er))
+}
+getdata()
     
-// loader
+// loader & debounce
 
 let id;
 document.getElementById("nv2_inp").addEventListener("input",function(){
