@@ -3,6 +3,10 @@ sign_inclick.onclick = () => {
     window.location.href = "signin.html"
 }
 
+document.getElementById("image").addEventListener("click",()=>{
+    window.location.href = "../index.html"
+})
+
 let form = document.querySelector("form")
 form.addEventListener("submit", function (ele) {
     ele.preventDefault()
