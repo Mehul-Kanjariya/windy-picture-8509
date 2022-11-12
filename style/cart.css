@@ -49,14 +49,21 @@ body{
 }
 #container>div{
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#container>div>p{
     text-align: center;
+    color: #2d2d2d;
+}
+#container>div>h3{
+    font-size: 20px;
+    color: #525050;
 }
 #container>div:hover{
     background-color: #ececec;
 }
 #container>div>img{
-    width: 50%;
-    height: 300px;
+    width: 100%;
+    
     margin: auto;
     justify-content: center;
     align-items: center;
