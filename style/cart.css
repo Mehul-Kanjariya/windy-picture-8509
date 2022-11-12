@@ -2,6 +2,11 @@ body{
     padding: 0%;
     margin: 0%;
 }
+#loader{
+    display: none;
+    width: fit-content;
+    margin: auto;
+}
 #intro{
     width: 80%;
     margin: auto;

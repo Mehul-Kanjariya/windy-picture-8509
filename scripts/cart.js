@@ -10,13 +10,14 @@ const options = {
 		'X-RapidAPI-Host': 'asos2.p.rapidapi.com'
 	}
 };
-// document.getElementById("nv2_inp").addEventListener("input",debounce(data,1000))
-// let search=document.getElementById("nv2_inp").value;
-// console.log();
 
 const data=async()=>{
     
     try{
+        let load=document.getElementById("loader");
+        load.style.display="block"
+
+        let search=document.getElementById("nv2_inp").value;
        let responce=await fetch(`https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=4209&limit=48&country=US&sort=freshness&q=${search}&currency=USD&sizeSchema=US&lang=en-US`, options)
        let data=await responce.json()
        let actualdata=data.products
@@ -30,6 +31,8 @@ const data=async()=>{
 
 
 const appenddata=(data)=>{
+    let load=document.getElementById("loader");
+    load.style.display="none"
     document.getElementById("container").innerHTML=null
     data.forEach((el)=>{
         let div=document.createElement("div");
@@ -58,15 +61,19 @@ function details(el){
 // loader
 
 let id;
+document.getElementById("nv2_inp").addEventListener("input",function(){
+    debounce(data,1000);
+})
 function debounce(func,delay){
-if(id){
+if(id)
+{
     clearTimeout(id)
-    loader=document.getElementById("loader");
-        loader.style.display="block"
+    // loader=document.getElementById("loader");
+    //     loader.style.display="block"
 }
 id=setTimeout(function(){
     func()
-    loader=document.getElementById("loader");
-        loader.style.display="none"
+    // loader=document.getElementById("loader");
+    //     loader.style.display="none"
 },delay)
 }

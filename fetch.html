@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="image">
+    </div>
+</body>
+</html>
+<script>
+    let arr = [];
+    let search = "Shirt";
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '3bf207a79emsh121fd90e6a9fd50p1904d4jsn13e06ac9d846',
+            'X-RapidAPI-Host': 'asos2.p.rapidapi.com'
+        }
+    };
+    fetch(`https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=4209&limit=48&country=US&sort=freshness&q=${search}&currency=USD&sizeSchema=US&lang=en-US`, options)
+        .then(response => response.json())
+        .then(response => a(response))
+        .catch(err => console.error(err));
+        function a(data){
+        data.products.forEach((el)=>{
+            let image = ("https://"+el.imageUrl);
+            let name = el.name;
+            let price = el.price.current.text;
+
+            let data = {
+                image,
+                name,
+                price
+            }
+            console.log(data)
+        })
+    }
+
+    {
+        {image: 'https://images.asos-media.com/products/vero-moda-tie-waist-shirt-dress-in-black/202347140-1-black', name: 'Vero Moda tie waist shirt dress in black', price: '$47.00'}
+ {image: 'https://images.asos-media.com/products/asos-design…y-oversized-shirt-in-chunky-cord/202744022-1-ecru', name: 'ASOS DESIGN boxy oversized shirt in chunky cord', price: '$50.00'}
+ {image: 'https://images.asos-media.com/products/asos-design-90s-oversized-cord-shirt-in-ecru/202821109-1-ecru', name: 'ASOS DESIGN 90s oversized cord shirt in ecru', price: '$40.00'}
+ {image: 'https://images.asos-media.com/products/asos-design…-denim-shirt-in-green-acid-wash/202821133-1-green', name: 'ASOS DESIGN oversized denim shirt in green acid wash', price: '$50.00'}
+ {image: 'https://images.asos-media.com/products/glamorous-o…sequin-part-of-a-set/202850545-1-matteblacksequin', name: 'Glamorous oversized shirt in matte black sequin - part of a set', price: '$70.00'}
+ {image: 'https://images.asos-media.com/products/topshop-sta…-pants-pajama-set-in-black/202942978-1-blackstars', name: 'Topshop star jacquard piped shirt and pants pajama set in black', price: '$65.00'}
+ {image: 'https://images.asos-media.com/products/topshop-mat…-pants-pajama-set-in-black/202942979-1-blackstars', name: 'Topshop Maternity star jacquard piped shirt and pants pajama set in black', price: '$65.00'}
+ {image: 'https://images.asos-media.com/products/topshop-pet…-pants-pajama-set-in-black/202943094-1-blackstars', name: 'Topshop Petite star jacquard piped shirt and pants pajama set in black', price: '$65.00'}
+ {image: 'https://images.asos-media.com/products/asos-design…ar-fleece-shirt-in-naive-floral/202948033-1-multi', name: 'ASOS DESIGN 90s oversized polar fleece shirt in naive floral', price: '$50.00'}
+ {image: 'https://images.asos-media.com/products/asos-design…ith-70s-ruffle-front-in-orange/202956801-1-orange', name: 'ASOS DESIGN regular crochet shirt with 70s ruffle front in orange', price: '$43.00'}
+ {image: 'https://images.asos-media.com/products/asos-design…ta-shirt-with-tie-neck-in-green/202957150-1-green', name: 'ASOS DESIGN regular tafeta shirt with tie neck in green', price: '$46.00'}
+ {image: 'https://images.asos-media.com/products/asos-design…ed-beach-shirt-in-champagne/203140439-1-champagne', name: 'ASOS DESIGN oversized beach shirt in champagne', price: '$40.00'}
+ {image: 'https://images.asos-media.com/products/asos-design…ch-shirt-in-green-part-of-a-set/203140469-1-green', name: 'ASOS DESIGN satin beach shirt in green - part of a set', price: '$40.00'}
+ {image: 'https://images.asos-media.com/products/asos-design…-in-black-velvet-burnout-stripe/203198504-1-black', name: 'ASOS DESIGN relaxed shirt in black velvet burnout stripe', price: '$50.00'}
+ {image: 'https://images.asos-media.com/products/asos-design…d-flannel-shirt-in-stone-stripe/203207609-1-stone', name: 'ASOS DESIGN 90s oversized flannel shirt in stone stripe', price: '$46.00'}
+ {image: 'https://images.asos-media.com/products/jack-jones-…ort-sleeve-shirt-in-blue/203292936-1-cashmereblue', name: 'Jack & Jones Originals stripe camp collar short sleeve shirt in blue', price: '$37.50'}
+ {image: 'https://images.asos-media.com/products/jack-jones-…ium-smart-jersey-shirt-in-white/203293424-1-white', name: 'Jack & Jones Premium smart jersey shirt in white', price: '$59.50'}
+ {image: 'https://images.asos-media.com/products/jack-jones-…r-short-sleeve-shirt-in-navy/203293441-1-seaborne', name: 'Jack & Jones Premium bandana print revere collar short sleeve shirt in navy', price: '$51.50'}
+ {image: 'https://images.asos-media.com/products/asos-design…th-contrast-stripe-cuffs-in-pink/203336866-1-pink', name: 'ASOS DESIGN Petite Christmas bauble satin shirt & …nts pajama set with contrast stripe cuffs in pink', price: '$52.00'}
+ {image: 'https://images.asos-media.com/products/asos-design…ch-shirt-in-khaki-part-of-a-set/203430712-1-khaki', name: 'ASOS DESIGN Curve satin beach shirt in khaki - part of a set', price: '$40.00'}
+ {image: 'https://images.asos-media.com/products/topman-visc…-in-geo-border-print/203437184-1-multicolourprint', name: 'Topman viscose revere shirt in geo border print', price: '$65.00'}
+ {image: 'https://images.asos-media.com/products/asos-design-shirt-beach-romper-in-rust/203468503-1-rust', name: 'ASOS DESIGN shirt beach romper in rust', price: '$43.00'}
+ {image: 'https://images.asos-media.com/products/asos-design-tall-shirt-beach-romper-in-rust/203468781-1-rust', name: 'ASOS DESIGN Tall shirt beach romper in rust', price: '$43.00'}
+ {image: 'https://images.asos-media.com/products/american-stitch-cord-shirt-in-brown/203471569-1-brown', name: 'American Stitch cord shirt in brown', price: '$86.00'}
+ {image: 'https://images.asos-media.com/products/asos-design…er-shirt-in-ombre-leopard-print/203490429-1-black', name: 'ASOS DESIGN sheer shirt in ombre leopard print', price: '$43.00'}
+ {image: 'https://images.asos-media.com/products/asos-design…atin-shirt-in-dark-floral-print/203490494-1-black', name: 'ASOS DESIGN relaxed deep camp collar satin shirt in dark floral print', price: '$40.00'}
+ {image: 'https://images.asos-media.com/products/collusion-c…irt-with-contrast-seam-in-black/203509279-1-black', name: 'COLLUSION crinkle satin skater shirt with contrast seam in black', price: '$50.90'}
+ {image: 'https://images.asos-media.com/products/collusion-o…ed-satin-crinkle-shirt-in-black/203527712-1-black', name: 'COLLUSION oversized satin crinkle shirt in black', price: '$39.90'}
+ {image: 'https://images.asos-media.com/products/collusion-oversized-cord-shirt-in-chocolate/203527811-1-brown', name: 'COLLUSION oversized cord shirt in chocolate', price: '$37.90'}
+ {image: 'https://images.asos-media.com/products/jack-jones-originals-smart-shirt-in-black/203585808-1-black', name: 'Jack & Jones Originals smart shirt in black', price: '$34.00'}
+ {image: 'https://images.asos-media.com/products/jack-jones-…pack-smart-shirts-in-white/203586384-1-whitewhite', name: 'Jack & Jones Originals 2-pack smart shirts in white', price: '$65.00'}
+ {image: 'https://images.asos-media.com/products/jack-jones-…mart-shirts-in-white-black/203586426-1-whiteblack', name: 'Jack & Jones Originals 2-pack smart shirts in white & black', price: '$65.00'}
+ {image: 'https://images.asos-media.com/products/jack-jones-originals-smart-shirt-in-white/203586837-1-white', name: 'Jack & Jones Originals smart shirt in white', price: '$34.00'}
+ {image: 'https://images.asos-media.com/products/topman-reve…t-in-gold-animal-burnout/203596698-1-goldandblack', name: 'Topman revere shirt in gold animal burnout', price: '$71.00'}
+ {image: 'https://images.asos-media.com/products/selected-homme-cotton-oxford-shirt-in-black/203614051-1-black', name: 'Selected Homme cotton oxford shirt in black', price: '$80.50'}
+ {image: 'https://images.asos-media.com/products/asos-design…ral-satin-jacquard-shirt-in-gold/203622975-1-gold', name: 'ASOS DESIGN regular floral satin jacquard shirt in gold', price: '$43.00'}
+ {image: 'https://images.asos-media.com/products/asos-design…th-embossed-croc-print-in-brown/203623019-1-brown', name: 'ASOS DESIGN regular velvet shirt with embossed croc print in brown', price: '$43.00'}
+ {image: 'https://images.asos-media.com/products/asos-design…tton-up-maxi-shirt-dress-in-teal/203633329-1-teal', name: 'ASOS DESIGN tiered button up maxi shirt dress in teal', price: '$55.00'}
+ {image: 'https://images.asos-media.com/products/simply-be-peplum-hem-shirt-in-black/203710384-1-black', name: 'Simply Be peplum hem shirt in black', price: '$46.00'}
+ {image: 'https://images.asos-media.com/products/asos-design…with-metal-collar-tips-in-black/203725449-1-black', name: 'ASOS DESIGN skinny fit satin shirt with metal collar tips in black', price: '$43.00'}
+ {image: 'https://images.asos-media.com/products/asos-design…me-oversized-shirt-in-blue/203789968-1-cobaltblue', name: 'ASOS DESIGN volume oversized shirt in blue', price: '$35.00'}
+ {image: 'https://images.asos-media.com/products/asos-design…r-shirt-in-brown-satin-jacquard/203789996-1-brown', name: 'ASOS DESIGN regular shirt in brown satin jacquard', price: '$46.00'}
+ {image: 'https://images.asos-media.com/products/pieces-mesh…ly-print-part-of-a-set/203825507-1-blackbutterfly', name: 'Pieces mesh v neck shirt in black butterfly print - part of a set', price: '$10.00'}
+ {image: 'https://images.asos-media.com/products/asos-design-regular-sheer-shirt-in-black/203869365-1-black', name: 'ASOS DESIGN regular sheer shirt in black', price: '$43.00'}
+ {image: 'https://images.asos-media.com/products/free-people…hirt-in-chocolate-brown/203945279-1-midnightbrown', name: 'Free People oversized velvet shirt in chocolate brown', price: '$168.00'}
+ {image: 'https://images.asos-media.com/products/weekday-relaxed-cord-shirt-in-brown/204014823-1-brown', name: 'Weekday relaxed cord shirt in brown', price: '$68.00'}
+ {image: 'https://images.asos-media.com/products/i-saw-it-fi…us-oversized-checked-shirt-in-red/201090138-1-red', name: 'I Saw It First Plus oversized checked shirt in red', price: '$49.00'}
+ {image: 'https://images.asos-media.com/products/free-people…ume-sleeve-denim-top-in-blue/201206805-1-darkblue', name: 'Free People Suhrie volume sleeve denim top in blue', price: '$73.00'}
+
+    }
+</script>
