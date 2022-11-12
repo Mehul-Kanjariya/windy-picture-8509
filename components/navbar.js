@@ -12,9 +12,9 @@ return `
 
 <div id="nv2_1">
     <img src="https://www.digitalspace.co.uk/wp-content/uploads/2022/01/logo-asos-neg.png"
-        alt="">
-    <h3>WOMEN</h3>
-    <h3>MEN</h3>
+        alt="" id="homepage_html">
+    <h3 id="wom">WOMEN</h3>
+    <h3 id="me">MEN</h3>
 </div>
 <input type="text" id="nv2_inp" placeholder="  Search for brands and items">
 <div id="nv2_2">

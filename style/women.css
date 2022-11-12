@@ -2,6 +2,13 @@ body{
     padding: 0;
     margin: 0;
 }
+#navbar {
+    top:0;
+    position: fixed;
+    display: block;
+    transition: top 0.1s;
+    z-index: 100;
+} 
 #bg_gradient{
     height: auto;
     width: 100%;
@@ -78,7 +85,7 @@ body{
     text-align: center;
 }
 #image2{
-    margin-top: 50px;
+    margin-top: 200px;
 }
 #image2>div{
     position: relative;

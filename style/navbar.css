@@ -5,6 +5,9 @@ body{
 *{
     letter-spacing:1.5px;
 }
+#homepage_html:hover{
+    cursor: pointer;
+}
 #nv1>button{
     border-top: none;
     border-bottom: none;
@@ -46,14 +49,16 @@ body{
     align-items: center;
     font-family: sans-serif;
 }
-
-
+#nv2_1>h3:hover{
+    cursor: pointer;
+}
 #nv2_inp {
-    width: 50%;
+    width: 48%;
     height: 35px;
     border-radius: 30px;
     font-size: 15px;
     border: 0px;
+    padding: 0 10px;
 }
 
 #nv2_1>img {
