@@ -8,10 +8,10 @@
 }
 #image_div{
     width: 70%;
-    height: 400px;
+    
 }
 #image_div>img{
-    width: 50%;
+    width: 80%;
     height: 100%;
     margin: auto;
     justify-content: center;
@@ -214,5 +214,8 @@
     #image_div{
         width: 95%;
         height: 350px;
+    }
+    #image_div>img{
+        width: 100%
     }
 }
