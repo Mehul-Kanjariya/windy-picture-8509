@@ -3,6 +3,10 @@ join.onclick = () => {
     window.location.href = "join.html"
 }
 
+document.getElementById("image").addEventListener("click",()=>{
+    window.location.href = "../index.html"
+})
+
 let form = document.querySelector("form")
 
 form.addEventListener("submit", function (ele) {

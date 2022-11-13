@@ -1,6 +1,8 @@
         *{
             font-family:Arial, Helvetica, sans-serif;
             box-sizing: border-box;
+            letter-spacing: 2px;
+            font-size: 14px;
         }
         body {
             background-color: #eee;
@@ -18,9 +20,12 @@
         form{
             margin-top: 0   ;
         }
-        #image>img {
-            margin-top: 1%;
-            margin-left: 45%;
+        #image{
+            width: fit-content;
+            margin: 2% auto auto auto;
+        }
+        #image:hover{
+            cursor: pointer;
         }
         #email,
         #password,
@@ -29,6 +34,9 @@
         #button>button {
             width: 95%;
             height: 45px;
+            padding: 10px;
+            font-weight: 700;
+            font-size: 14px;
         }
 
         #box2 {
@@ -48,12 +56,12 @@
         }
 
         #sign_inclick,#join_click {
-            color: grey;
+            color: rgb(123, 120, 120);
             cursor: pointer;
             
         }
         h4{
-            color: grey;
+            color: rgb(123, 120, 120);
         }
         #join {
             display: flex;
@@ -69,4 +77,20 @@
         #join_click:hover{
             color: black;
           text-decoration: underline;
+        }
+
+        @media only screen and (max-width: 730px){
+            #box {
+                width:80%;
+            }
+        }
+        @media (min-width: 731px) and (max-width: 950px){
+            #box {
+                width:65%;
+            }
+        }
+        @media (min-width: 951px) and (max-width: 1150px){
+            #box {
+                width:55%;
+            }
         }

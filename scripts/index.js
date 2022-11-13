@@ -13,6 +13,18 @@ function myfunc(){
 	window.location.href='./signup/signin.html'
 }
 
+document.getElementById('homepage_html').addEventListener('click',()=>{
+	window.location.href="index.html";
+});
+
+document.getElementById('wom').addEventListener('click',()=>{
+	window.location.href="women.html";
+})
+
+document.getElementById('me').addEventListener('click',()=>{
+	window.location.href="index.html";
+})
+
 let offer_clothes_data = [
 	{
 		img:"https://images.asos-media.com/products/asos-design-puffer-jacket-in-lime-tiger-print/202858821-2?$n_640w$&wid=513&fit=constrain",

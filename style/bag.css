@@ -16,27 +16,33 @@ body{
     width: 55%;
     margin: auto;
     margin-right: 20px;
+    margin-top: 20px;
 }
 #right{
     width: 45%;
     margin: auto;
-    background-color: white;
-    
+    background-color: white; 
 }
 
 #head{display: flex;
 justify-content:space-around;
 margin: auto;
 background-color: white;
-margin-bottom: 20px;}
+margin-bottom: 20px;
+width: 95%;
+font-size: small;}
 
+
+.hbag{
+    width: 25%;
+}
 #rhead{
     margin: auto;
     padding-left: 5%;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
 #button{
-    width: 350px;
+    width: 70%;
     height: 50px;
     background-color: rgb(1,136,73);
     border: 0px;
@@ -100,4 +106,19 @@ width: 90%;}
              width: 100%;
              background-color: white;
          }
+         #bimg{
+            width: 50%;
+         }
 
+#selecttag{
+    width: 80%;
+    padding-left: 10px;
+}
+
+#divimg{
+    width: 70%;
+    padding-left: 10px;
+}
+#imgdiV{
+    width: 80%;
+}

@@ -9,6 +9,10 @@ body{
     transition: top 0.1s;
     z-index: 100;
 } 
+#cart{
+    display: none;
+    margin-top: 200px;
+}
 #bg_gradient{
     height: auto;
     width: 100%;
