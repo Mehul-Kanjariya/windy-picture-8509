@@ -143,7 +143,7 @@ const updatepost=async()=>{
     catch(error){
         console.log(error);
     }
-    alert("Product Updated Successfully")
+    alert( "Product Updated Succesfuly")
 }
 
 function admins_cart(){
