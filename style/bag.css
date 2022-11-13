@@ -21,8 +21,7 @@ body{
 #right{
     width: 45%;
     margin: auto;
-    background-color: white;
-    
+    background-color: white; 
 }
 
 #head{display: flex;
