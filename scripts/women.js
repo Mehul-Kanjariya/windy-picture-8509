@@ -1,30 +1,30 @@
+import {navbar1} from '../components/navbar.js';
 
-let offer_clothes_data = [
-	{
-		img:"https://images.asos-media.com/products/asos-design-puffer-jacket-in-lime-tiger-print/202858821-2?$n_640w$&wid=513&fit=constrain",
-		p:"COLD WEATHER WINS"
-	},
-	{
-		img:"https://images.asos-media.com/products/collusion-oversized-sweatshirt-with-print-in-black/201126474-2?$n_640w$&wid=513&fit=constrain",
-		p:"STYLES UNDER £15"
-	},
-	{
-		img:"https://images.asos-media.com/products/french-connection-slim-fit-prince-of-wales-check-waistcoat/21178962-4?$n_640w$&wid=513&fit=constrain",
-		p:"SUITS AND STUFF"
-	},
-	{
-		img:"https://images.asos-media.com/products/dtt-baggy-fit-jeans-in-light-blue/202261958-1-blue?$n_640w$&wid=513&fit=constrain",
-		p:"JEANS"
-	},
-	{
-		img:"https://images.asos-media.com/products/adidas-running-run-icons-t-shirt-in-orange/202145849-1-orange?$n_640w$&wid=513&fit=constrain",
-		p:"SPORTSWEAR"
-	},
-	{
-		img:"https://images.asos-media.com/products/adidas-originals-zx-22-boost-trainers-in-green-and-off-white/201524779-1-white?$n_640w$&wid=513&fit=constrain",
-		p:"SNEAKS & MORE"
-	}
-]
+let navbar_div = document.getElementById('navbar');
+navbar_div.innerHTML=navbar1();
+
+import {footer} from '../components/footer.js';
+
+let footer_div = document.getElementById('footer');
+footer_div.innerHTML=footer();
+
+let user = document.getElementById('userid').addEventListener('click',myfunc);
+function myfunc(){
+	window.location.href='./signup/signin.html'
+}
+
+document.getElementById('homepage_html').addEventListener('click',()=>{
+	window.location.href="index.html";
+})
+
+document.getElementById('wom').addEventListener('click',()=>{
+	window.location.href="women.html";
+})
+
+document.getElementById('me').addEventListener('click',()=>{
+	window.location.href="index.html";
+})
+
 
 const show = (data) => {
 	let div = document.getElementById("images");
@@ -124,3 +124,14 @@ prev.addEventListener('click', () => {
 next.addEventListener('click', () => {
     slider.scrollLeft +=290
 })
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.display = "block";
+  } else {
+    document.getElementById("navbar").style.display = "none";
+  }
+  prevScrollpos = currentScrollPos;
+}
