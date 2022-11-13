@@ -29,6 +29,9 @@ document.getElementById('me').addEventListener('click',()=>{
 	window.location.href="index.html";
 })
 
+document.getElementById("bag").addEventListener("click",()=>{
+    window.location.href="bag.html"
+})
 
 const show = (data) => {
 	let div = document.getElementById("images");

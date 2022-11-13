@@ -50,7 +50,12 @@ const appenddata=(data)=>{
     })
 }
 function details(el){
-    let data=el;
+    let data={
+        id:el.id,
+        name:el.name,
+        image:"https://"+el.imageUrl,
+        price:el.price.current.text
+    };
     localStorage.setItem("details",JSON.stringify(data));
     window.location.href="details.html"
 }

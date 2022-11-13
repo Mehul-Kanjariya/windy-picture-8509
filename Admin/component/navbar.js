@@ -12,7 +12,7 @@ const navbar1=()=>{
   
   <div id="nv2_1">
       <img src="https://www.digitalspace.co.uk/wp-content/uploads/2022/01/logo-asos-neg.png"
-          alt="" id="homepage_html">
+          alt="" id="admin_html">
       <h3 id="wom">WOMEN</h3>
       <h3 id="me">MEN</h3>
   </div>

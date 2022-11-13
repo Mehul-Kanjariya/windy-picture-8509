@@ -1,3 +1,6 @@
+let arr = JSON.parse(localStorage.getItem("details"))
+console.log(arr);
+
 let paybtn = document.getElementById("button");
 paybtn.onclick = () => {
   document.getElementById("paymentdiv").style.display = "block";

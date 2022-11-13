@@ -16,6 +16,7 @@ document.getElementById("button").onclick = () => {
   window.location.href = "checkout.html";
 };
 
+
 document.getElementById("clear").onclick = () => {
   document.getElementById("bag_item").style.display = "none";
   document.getElementById("details").style.display = "none";

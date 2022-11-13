@@ -171,3 +171,7 @@ function get_input(){
 document.getElementById("cart_transfer").addEventListener("click",()=>{
 	window.location.href="./cart.html"
 })
+
+document.getElementById("bag").addEventListener("click",()=>{
+    window.location.href="bag.html"
+})

@@ -29,7 +29,9 @@ const append=()=>{
 }
 
 append(data);
-
+function Bag(){
+    window.location.href="bag.html";
+}
 document.getElementById("bag").addEventListener("click",()=>{
     window.location.href="bag.html"
 })
