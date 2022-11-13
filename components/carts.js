@@ -1,5 +1,5 @@
 const cart=()=>{
-    return `    <div id="intro">
+    return `<div id="intro">
     <h1>What's New in: Clothing</h1>
     <p>Want to update your wardrobe with the latest styles? Our edit of new-in clothing has all the latest trends in one place. Shop ASOS DESIGN for everything from staple T-shirt dresses and jumpsuits to cool co-ords and statement pieces. Browse Topshop for an everyday wardrobe refresh, with trousers, shirts and versatile dresses on rotation. For experimental designs at the forefront of fashion, check out COLLUSION's colour blocking and bold prints.</p>
 </div>

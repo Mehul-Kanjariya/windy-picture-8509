@@ -116,6 +116,7 @@ const deletepost=async()=>{
     })
     let data=await res.json();
     console.log(data);
+    alert("Product Deleted Succesful")
 }
 
                 //update post
@@ -142,6 +143,7 @@ const updatepost=async()=>{
     catch(error){
         console.log(error);
     }
+    alert( "Product Updated Succesfuly")
 }
 
 function admins_cart(){

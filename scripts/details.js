@@ -27,5 +27,7 @@ const append=()=>{
     document.getElementById("image_container").append(image,details);
 
 }
-
+function Bag(){
+    window.location.href="bag.html"
+}
 append(data);
