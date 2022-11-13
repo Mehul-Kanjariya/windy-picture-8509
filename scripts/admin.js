@@ -30,7 +30,6 @@ function add_product(){
     })
     btn.innerText="Add Product"
     document.getElementById("container").append(h1,id,image,name,price,btn)
-    
 }
 
                 // delete post
