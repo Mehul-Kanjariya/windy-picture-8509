@@ -24,9 +24,6 @@ const append=()=>{
     delivery.innerText="Free Delivery";
 
     details.append(title,cprice,btn,delivery)
-    document.getElementById("container").append(image,details);
-
-    details.append(title,cprice,oprice,btn,delivery)
     document.getElementById("image_container").append(image,details);
 
 }
