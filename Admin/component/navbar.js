@@ -20,7 +20,7 @@ const navbar1=()=>{
   <div id="nv2_2">
       <i class="fa-regular fa-user" id="userid"></i>
       <i class="fa-regular fa-heart"></i>
-      <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+      <i class="fa-sharp fa-solid fa-bag-shopping" id="bag"></i>
   </div>
   
   </div>

@@ -167,3 +167,7 @@ function get_input(){
 	let a = document.getElementById('nv2_inp').value;
 	console.log(a);
 }
+
+document.getElementById("cart_transfer").addEventListener("click",()=>{
+	window.location.href="./cart.html"
+})

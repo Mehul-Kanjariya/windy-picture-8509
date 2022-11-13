@@ -45,3 +45,21 @@ let img = document.createElement("img");
 img.src = data.image;
 img.setAttribute("id", "newimg");
 document.getElementById("imgdiV").append(img);
+
+
+document.getElementById('homepage_html').addEventListener('click',()=>{
+	window.location.href="index.html";
+});
+
+document.getElementById('wom').addEventListener('click',()=>{
+	window.location.href="women.html";
+})
+
+document.getElementById('me').addEventListener('click',()=>{
+	window.location.href="index.html";
+})
+
+let user = document.getElementById('userid').addEventListener('click',myfunc);
+function myfunc(){
+	window.location.href='./signup/signin.html'
+}

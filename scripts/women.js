@@ -8,6 +8,10 @@ import {footer} from '../components/footer.js';
 let footer_div = document.getElementById('footer');
 footer_div.innerHTML=footer();
 
+document.getElementById("cart_transfer").addEventListener("click",()=>{
+	window.location.href="./cart.html"
+})
+
 let user = document.getElementById('userid').addEventListener('click',myfunc);
 function myfunc(){
 	window.location.href='./signup/signin.html'

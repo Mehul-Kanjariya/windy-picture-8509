@@ -31,13 +31,17 @@ function login(data){
     }
     if(email_flag==true && password_flag==true){
         alert("Login Successfull")
-        window.location.href = "../index.html"
     }else if(email_flag==true && password_flag==false){
         alert("Wrong Password");
     }else{
         alert("Wrong Details");
     }
-    if(email_flag==true && password_flag==true){
+    if(email=="mehul@gamil.com" && password=="123"){
+        alert("Welcome back admin");
+        window.location.href = "../Admin/admin.html"
+    }else{
+        if(email_flag==true && password_flag==true){
         window.location.href = "../index.html"
+     }
     }
 }
