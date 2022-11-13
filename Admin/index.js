@@ -88,7 +88,7 @@ document.getElementById("bag").addEventListener("click",()=>{
 })
 
 document.getElementById('admin_html').addEventListener('click',()=>{
-	window.location.href="./admin.html";
+	window.location.href="../index.html";
 })
 
 document.getElementById('wom').addEventListener('click',()=>{

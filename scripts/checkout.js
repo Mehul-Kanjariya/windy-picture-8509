@@ -30,7 +30,7 @@ document.getElementById("otpbtn").onclick = () => {
   if (otpnum == "123456" && otpnum.length == 6) {
     otpnum.innertext = null;
     alert("Payment Success & Order Placed successfully");
-    window.location.href = "bag.html";
+    window.location.href = "./index.html";
     localStorage.removeItem("details");
 
     document.getElementById("subtotal-left").style.display = "none";
