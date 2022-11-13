@@ -116,7 +116,7 @@ const deletepost=async()=>{
     })
     let data=await res.json();
     console.log(data);
-    alert("Product Deleted Succesful")
+    alert("Product Deleted Successfully")
 }
 
                 //update post

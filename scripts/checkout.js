@@ -1,3 +1,6 @@
+let arr = JSON.parse(localStorage.getItem("details"))
+console.log(arr);
+
 let paybtn = document.getElementById("button");
 paybtn.onclick = () => {
   document.getElementById("paymentdiv").style.display = "block";
@@ -28,9 +31,21 @@ document.getElementById("otpbtn").onclick = () => {
     otpnum.innertext = null;
     alert("Payment Success & Order Placed successfully");
     window.location.href = "bag.html";
+    localStorage.removeItem("details");
+
+    document.getElementById("subtotal-left").style.display = "none";
   } else {
     alert("Wrong OTP");
   }
 };
 
 document.getElementById("otpdiv").style.display = "none";
+
+console.log(document.getElementById("product_price").innerText=arr.price)
+document.getElementById("desc").innerText=arr.name;
+document.getElementById("cart_total").innerText=arr.price;
+
+let image = document.createElement("img");
+image.src=arr.image;
+image.setAttribute("id","product_image");
+document.getElementById("bagdiv").append(image);
