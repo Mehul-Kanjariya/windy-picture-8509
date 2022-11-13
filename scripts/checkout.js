@@ -40,3 +40,12 @@ document.getElementById("otpbtn").onclick = () => {
 };
 
 document.getElementById("otpdiv").style.display = "none";
+
+console.log(document.getElementById("product_price").innerText=arr.price)
+document.getElementById("desc").innerText=arr.name;
+document.getElementById("cart_total").innerText=arr.price;
+
+let image = document.createElement("img");
+image.src=arr.image;
+image.setAttribute("id","product_image");
+document.getElementById("bagdiv").append(image);

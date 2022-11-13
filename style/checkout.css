@@ -1,6 +1,9 @@
 body{
     background-color: rgb(238,238,238);
 }
+#bagdiv img{
+    width: 100%;
+}
 #head{
    width: 95%;
    display: flex;
