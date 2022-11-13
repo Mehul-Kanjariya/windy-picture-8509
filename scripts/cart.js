@@ -88,9 +88,30 @@
         
     // loader & debounce
 
+
+// append
+const append = (data) => {
+   
+    document.getElementById("container").innerHTML = null;
+    data.map((el) => {
+       
+        let div = document.createElement("div");
+        div.addEventListener("click",function(){
+            details(el);
+        })
+        let img = document.createElement("img");
+        img.src = el.image;
+        let p = document.createElement("p");
+        p.innerText = el.name;
+        let h3=document.createElement("h3");
+        h3.innerText=el.price;
+        div.append(img,p,h3)
+        document.getElementById("container").append(div);
+
     let id;
     document.getElementById("nv2_inp").addEventListener("input",function(){
         debounce(data,1000);
+
     })
     function debounce(func,delay){
     if(id)
