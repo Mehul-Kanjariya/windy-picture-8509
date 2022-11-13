@@ -1,3 +1,14 @@
+import {navbar1} from '../components/navbar.js';
+
+let navbar_div = document.getElementById('navbar');
+navbar_div.innerHTML=navbar1();
+
+import {footer} from '../components/footer.js';
+
+let footer_div = document.getElementById('footer');
+footer_div.innerHTML=footer();
+
+    
     const options = {
         method: 'GET',
         headers: {
