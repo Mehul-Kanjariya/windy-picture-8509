@@ -25,4 +25,5 @@ const append=()=>{
     details.append(title,cprice,btn,delivery)
     document.getElementById("container").append(image,details);
 }
+
 append(data);
