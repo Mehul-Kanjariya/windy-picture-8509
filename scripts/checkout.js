@@ -28,6 +28,9 @@ document.getElementById("otpbtn").onclick = () => {
     otpnum.innertext = null;
     alert("Payment Success & Order Placed successfully");
     window.location.href = "bag.html";
+    localStorage.removeItem("details");
+
+    document.getElementById("subtotal-left").style.display = "none";
   } else {
     alert("Wrong OTP");
   }
