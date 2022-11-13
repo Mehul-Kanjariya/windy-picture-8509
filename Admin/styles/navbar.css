@@ -1,0 +1,134 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+*{
+  letter-spacing:1.5px;
+}
+#homepage_html:hover{
+  cursor: pointer;
+}
+#nv1>button{
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  border-left:1px solid black;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#nv1>button:nth-child(1){
+  border-right:1px solid black;
+  padding-left: 0;
+  padding-right: 0;
+}
+#nv1 {
+  height: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  background: #f0f0f0;
+}
+
+#nv1>button>img {
+  width: 24%;
+}
+
+#nv2 {
+  background-color: #2d2d2d;
+  height: 60px;
+  display: flex;
+  column-gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+#nv2_1 {
+
+  display: flex;
+  column-gap: 30px;
+  color: white;
+  align-items: center;
+  font-family: sans-serif;
+}
+#nv2_1>h3:hover{
+  cursor: pointer;
+}
+#nv2_inp {
+  width: 48%;
+  height: 35px;
+  border-radius: 30px;
+  font-size: 15px;
+  border: 0px;
+  padding: 0 10px;
+}
+
+#nv2_1>img {
+  width: 40%;
+  height: 35px;
+}
+
+#nv2_1>h3{
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+#nv2_2{
+  color: white;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  font-size: 20px;
+}
+
+#nv2_2>i:hover{
+  cursor: pointer;
+}
+
+#nv3 {
+  background-color: #525050;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  color: white;
+  font-size: 13px;
+  font-family: sans-serif
+}
+
+#nv3>div {
+  width: 78%;
+  margin: auto;
+  display: flex;
+  column-gap: 15px;
+}
+
+#nv4 {
+  background-color: #ff385c;
+  height: 55px;
+}
+
+#nv4>div {
+  width: 78%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 15px;
+  font-weight: bold;
+  font-family: sans-serif
+}
+#nv4>div button:nth-child(1) {
+  padding: 5px 15px;
+  background-color: #ff385c;
+  border: 2px solid black;
+  font-weight: bold;
+}
+#nv4>div button:nth-child(3) {
+  padding: 5px 20px;
+  background-color: #ff385c;
+  border: 2px solid black;
+  font-weight: bold;
+}
+#nv4 p{
+  letter-spacing: 2.5px;
+  font-size: 14px;
+}
