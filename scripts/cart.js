@@ -75,6 +75,9 @@ const append = (data) => {
     data.map((el) => {
        
         let div = document.createElement("div");
+        div.addEventListener("click",function(){
+            details(el);
+        })
         let img = document.createElement("img");
         img.src = el.image;
         let p = document.createElement("p");
