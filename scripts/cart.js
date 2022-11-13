@@ -1,5 +1,26 @@
+<<<<<<< HEAD
+import {navbar1} from '../components/navbar.js';
+
+let navbar_div = document.getElementById('navbar');
+navbar_div.innerHTML=navbar1();
+
+import {footer} from '../components/footer.js';
+
+let footer_div = document.getElementById('footer');
+footer_div.innerHTML=footer();
+
+    
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'ee3137b516msh9753a9cc8da78ddp12c718jsn3bef3b34939d',
+            'X-RapidAPI-Host': 'asos2.p.rapidapi.com'
+        }
+    };
+=======
 import {navbar1} from "../components/navbar.js";
 import {footer} from "../components/footer.js";
+>>>>>>> 1994518872ade36014e0fd900e9115ee3550fa8e
 
 document.getElementById("navbar").innerHTML=navbar1();
 document.getElementById("footer").innerHTML=footer();

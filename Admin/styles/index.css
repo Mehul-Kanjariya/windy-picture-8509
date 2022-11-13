@@ -1,0 +1,103 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+#loader{
+    display: none;
+    width: fit-content;
+    margin: auto;
+}
+#intro{
+    width: 80%;
+    margin: auto;
+}
+#intro>h1{
+    text-align: center;
+    margin-bottom: 0;
+}
+#intro>p{
+    text-align: center;
+    color: rgb(36, 35, 35);
+   
+}
+#sort{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(247, 237, 224);
+    /* position: sticky; */
+    top: 0%;
+    background-color: rgb(236, 236, 236);
+}
+.sort{
+    height: 40px;
+    font-size: 15px;
+    color: rgb(86, 88, 88);
+    border:1px solid gray;
+    border: none;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    background-color: rgb(236, 236, 236);
+}
+.sort:hover{
+    color: rgb(25, 0, 255);
+}
+
+#container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding-top: 60px;
+}
+#container>div{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    text-align: center;
+}
+#container>div>p{
+    text-align: center;
+    color: #2d2d2d;
+}
+#container>div>h3{
+    font-size: 20px;
+    color: #525050;
+}
+#container>div:hover{
+    background-color: #ececec;
+}
+#container>div>img{
+    width: 100%;
+    
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+/* medium size */
+@media only screen and (max-width: 730px){
+    #sort{
+        grid-template-columns: repeat(3,1fr);
+    }
+    #container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .sort:nth-child(7),.sort:nth-child(8){
+        display: none;
+    }
+}
+
+/* small size */
+@media all and (min-width: 731px) and (max-width: 1150px) {
+    #sort{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .sort:nth-child(3),.sort:nth-child(4),.sort:nth-child(5),.sort:nth-child(6),.sort:nth-child(7),.sort:nth-child(8){
+        display: none;
+    }
+    #container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}

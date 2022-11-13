@@ -7,6 +7,15 @@
     padding-bottom: 50px;
     height: auto;
 }
+#cart{
+    display: none;
+} 
+#navbar {
+    top:0;
+    display: block;
+    transition: top 0.1s;
+    z-index: 100;
+} 
 #image_div{
     width: 70%;  
 }
