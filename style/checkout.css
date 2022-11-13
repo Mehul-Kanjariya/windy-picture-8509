@@ -2,8 +2,7 @@ body{
     background-color: rgb(238,238,238);
 }
 #head{
-    border:1px solid red
-   ; width: 95%;
+   width: 95%;
    display: flex;
    justify-content: space-between;
    ;margin: auto;
@@ -11,8 +10,7 @@ body{
    margin-bottom: 20px;
 }
 #container{
-    border:1px solid rgb(40, 17, 17)
-   ; width: 95%;
+    width: 95%;
    display: flex;
    ;margin: auto;
    margin: auto;
@@ -70,17 +68,28 @@ body{
          margin-top: 60px;
          background-color: white;}
     
-
+         #change{
+            margin-right: 20px;
+         }
+.paymenttype{
+    margin-left: 30px;
+    padding-top:  20px;
+    width: 50%;
+}
 #promo{
 
-    width: 450px;
+    width: 40%;
     height: 40px;
+    margin-left: 30px;
+    margin-bottom: 10px;
 }
 
 #select{
-    width: 100%;
+    width: 60%;
     height: 50px;
+    margin: auto;
     margin-bottom: 10px;
+    margin-left: 30px;
 font-size: large;}
 
 #cut{display: flex;
@@ -94,11 +103,10 @@ font-size: large;}
     flex-direction: row;
     margin: auto;
     background-color: white;
+    position:static;
 }
 
-#bag_item img{
-    width: 150px;
-}
+
 
 #subtotal{display: flex;
     justify-content:space-between;
@@ -110,12 +118,7 @@ width: 90%;}
         margin: auto;
         width: 90%;}
 
-        delivery1{
-            display: flex;
-        justify-content:right;
-        margin: auto;
-        width: 90%;
-        }
+        
 
         #payment {display: flex;
             justify-content:space-between;
@@ -133,7 +136,7 @@ width: 90%;}
             }
             button{
                 margin-top: 20px;
-                    width: 250px;
+                    width: 50%;
                 height: 50px;
             margin-left: 25px;}
 
@@ -190,3 +193,22 @@ width: 90%;}
                 color: aliceblue;
                 border: 0px;
                }
+
+#asos{
+    width: 80px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#bagimg{
+    width: 100%;
+}
+#bagdiv{
+    width: 50%;
+    margin-right: 10px;
+}
+
+#bag_item{
+   
+    width:100% ;
+}

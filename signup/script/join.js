@@ -3,6 +3,10 @@ sign_inclick.onclick = () => {
     window.location.href = "signin.html"
 }
 
+document.getElementById("image").addEventListener("click",()=>{
+    window.location.href = "../index.html"
+})
+
 let form = document.querySelector("form")
 form.addEventListener("submit", function (ele) {
     ele.preventDefault()
@@ -15,7 +19,7 @@ form.addEventListener("submit", function (ele) {
     button.onclick = () => {
         if (validate() == undefined) {
             alert("Sucess")
-            window.location.href = "index.html"
+            window.location.href = "signin.html"
 
         }
     }
@@ -28,7 +32,7 @@ function validate() {
         email.focus()
         return false
     }
-    if (password.value.length < 6) {
+    if (password.value.length < 1) {
         password.style.border = "1px solid red"
         password_error.style.display = "block"
         password.focus()

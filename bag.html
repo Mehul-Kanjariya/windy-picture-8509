@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/bag.css">
+    <script src="https://kit.fontawesome.com/47b8d53052.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
 </head>
 
 <body>
@@ -14,18 +17,18 @@
     <div id="container">
         <div id="left">
             <div id="head">
-                <h1>MY BAG</h1>
+                <h3 class="hbag">MY BAG</h3>
                 <h4>Items are reserved for 60 minutes</h4>
             </div>
             <div id="bag_item">
-                <div>
-                    <img src="https://images.asos-media.com/products/asos-design-super-oversized-hoodie-in-back-with-photographic-print/203753065-1-black">
+                <div  id="imgdiV">
+                    <img id="imgdiV" src="https://images.asos-media.com/products/asos-design-super-oversized-hoodie-in-back-with-photographic-print/203753065-1-black">
                 </div>
                     <div>
-                    <div id="cut"><h3>$36.00</h3> <p>X</p>
+                    <div id="cut"><h3 id="price">$36.00</h3> <p id="clear">X</p>
                     </div>
-                    <p>ASOS DESIGN super oversized hoodie in back with photographic print</p>
-                    <div id="order"><p>Tommy black</p>
+                    <p id="description">ASOS DESIGN super oversized hoodie in back with photographic print</p>
+                    <div id="order"><p id="color">Tommy black</p>
                         <select id="">
                             <option >XL</option>
                             <option >XXL </option>
@@ -45,27 +48,26 @@
                 <button id="save">Save for later</button></div>
             </div>
             <div>
-                <div id="subtotal-left"><h3>Sub-total</h3> <h3>- 00</h3></div>
+                <div id="subtotal-left"><h3>Sub-total=</h3> <h3 id="subval1"></h3></div>
             </div>
         </div>
         <div id="right">
             <div id="rhead">
                 
-                <h1>TOTAL</h1></div>
+                <h1 id="Total">TOTAL</h1></div>
                 <div id="details">
-                    <div id="subtotal"><h3>Sub-total</h3> <p>.</p></div>
-                    <div id="delivery"><h3>Delivery</h3> <p>!</p></div>
-                    <div><select id="select">
+
+                    <div id="selecttag"><select id="select">
                          <option >Standerd Delivery($7.00)</option>
                          <option >Express Delivery($22.50) </option>
                     </select></div>
                     <div id="button_div"><button id="button">CHECKOUT</button></div>
-                    <div><h3>WE ACCEPT</h3></div>
-                    <div>
+                    <div id="divimg"><h6>WE ACCEPT</h6></div>
+                    <div id="divimg">
                         
-                        <img src="https://assets.asosservices.com/asos-finance/images/marketing/single.png" alt="error">
+                        <img id="divimg" src="https://assets.asosservices.com/asos-finance/images/marketing/single.png" alt="error">
                     </div>
-                    <div><h5>Got a discount code? Add if it in the step</h5></div>
+                    <div id="divimg"><h6>Got a discount code? Add if it in the step</h6></div>
                 </div>
                
             </div>

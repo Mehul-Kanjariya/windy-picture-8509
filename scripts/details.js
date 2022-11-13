@@ -22,8 +22,10 @@ const append=()=>{
     })
     let delivery=document.createElement("p");
     delivery.innerText="Free Delivery";
+
     details.append(title,cprice,btn,delivery)
-    document.getElementById("container").append(image,details);
+    document.getElementById("image_container").append(image,details);
+
 }
 
 append(data);
