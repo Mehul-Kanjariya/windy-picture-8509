@@ -3,11 +3,36 @@ body{
     margin: 0%;
     background-color: rgb(37, 37, 37);
 }
+#main{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+#button{
+    width: 50;
+    margin-top: 100px;
+    margin-left: 70px;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+#button>button{
+    width: 90%;
+    height: 60px;
+    margin-top: 20px;
+    font-size: 20px;
+    
+}
+#button>button:hover{
+    background-color: beige;
+}
 #container{
-    width: 30%;
+    width: 50%;
     margin: auto;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 110px;
+    
 }
 #container>input{
     width: 98.2%;
