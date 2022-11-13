@@ -13,6 +13,7 @@ body{
 }
 #intro>h1{
     text-align: center;
+    margin-bottom: 0;
 }
 #intro>p{
     text-align: center;
@@ -27,7 +28,7 @@ body{
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: rgb(247, 237, 224);
-    position: sticky;
+    /* position: sticky; */
     top: 0%;
     background-color: rgb(236, 236, 236);
 }
@@ -75,7 +76,7 @@ body{
     display: flex;
 }
 /* medium size */
-@media all and (min-width:400px)and (max-width:800px){
+@media only screen and (max-width: 730px){
     #sort{
         grid-template-columns: repeat(3,1fr);
     }
@@ -88,7 +89,7 @@ body{
 }
 
 /* small size */
-@media all and (min-width:300px)and (max-width:400px){
+@media all and (min-width: 731px) and (max-width: 1150px) {
     #sort{
         grid-template-columns: repeat(2,1fr);
     }
