@@ -46,18 +46,18 @@
 > Github: [Mehul-Kanjariya](https://github.com/Mehul-Kanjariya) 
 (Teamlead)
 Worked on Feedback module
-#### Brajesh kumar
-> Github: [brajesh623](https://github.com/brajesh623)
+#### Devang Bramhakshatriya
+> Github: [Devangbramhakshatriya](https://github.com/Devangbramhakshatriya)
 Worked on Admin and User module
 
-#### Manjunath Patil 
->Github: [btcpatil](https://github.com/btcpatil)
+#### Aniket Kolhe
+>Github: [aniketkolhe43](https://github.com/aniketkolhe43)
 Worked on Route module
 
-#### Anshul Sharma
->Github: [Jhala26](https://github.com/Jhala26)
+#### Sumit Sagar
+>Github: [sumitsagar123](https://github.com/sumitsagar123)
 Worked on Reservation Module
 
-#### Sarthak Singh
->Github: [Sarthak0008](https://github.com/Sarthak0008)
+#### Sourabh Patel
+>Github: [sourabhpatel073](https://github.com/sourabhpatel073)
 Worked on Bus Module
