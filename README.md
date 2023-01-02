@@ -45,19 +45,19 @@
 #### Kanjariya Mehul Kumar
 > Github: [Mehul-Kanjariya](https://github.com/Mehul-Kanjariya) 
 (Teamlead)
-Worked on Feedback module
+Worked on Landing Page and Admin Module
 #### Devang Bramhakshatriya
 > Github: [Devangbramhakshatriya](https://github.com/Devangbramhakshatriya)
 Worked on Admin and User module
 
 #### Aniket Kolhe
 >Github: [aniketkolhe43](https://github.com/aniketkolhe43)
-Worked on Route module
+Worked on Navbar and Login Logout Module
 
 #### Sumit Sagar
 >Github: [sumitsagar123](https://github.com/sumitsagar123)
-Worked on Reservation Module
+Worked on Login Logout Module
 
 #### Sourabh Patel
 >Github: [sourabhpatel073](https://github.com/sourabhpatel073)
-Worked on Bus Module
+Worked on Place order and Checkout Module
